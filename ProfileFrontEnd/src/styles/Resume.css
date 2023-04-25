@@ -1,0 +1,19 @@
+.resume {
+  background-color: #f8f8f8;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume_title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.resume_definition {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}

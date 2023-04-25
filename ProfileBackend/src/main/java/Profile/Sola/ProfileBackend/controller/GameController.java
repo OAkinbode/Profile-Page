@@ -31,6 +31,7 @@ public class GameController {
 
     @PostMapping("/humanplayer/{move}")
     public ScoreBoard humanMove(@PathVariable("move") String move) throws IOException {
+        System.out.println("HumanPlayer Api call succeeded");
         return gameService.playGameXPlayer(move);
     }
 

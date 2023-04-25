@@ -31,7 +31,6 @@ public class RandomPlayer extends Player {
 
         incrPlayCount(move);
         opponent.incrPlayCount(move);
-        System.out.println("move made by computer: " + row + "" + col + "" + mark);
         row = Character.getNumericValue(move.charAt(0));
         col = Character.getNumericValue(move.charAt(2));
         board.addMark(row, col, mark);

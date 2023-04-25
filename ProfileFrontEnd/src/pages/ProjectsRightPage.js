@@ -3,7 +3,7 @@ import { Container, Typography, Box, Avatar, Paper } from "@mui/material";
 import profileimage from "../assets/profileimage.jpeg";
 import { Link } from "react-router-dom";
 
-export default function RightPane() {
+export default function ProjectsRightPage() {
   const [clickedHome, setClickedHome] = useState(false);
   const [clickedProjects, setClickedProjects] = useState(false);
   const [clickedContact, setClickedContact] = useState(false);
@@ -53,16 +53,6 @@ export default function RightPane() {
               style={{ color: clickedProjects ? "blue" : "inherit" }}
             >
               <Link to="/projects"> My Projects </Link>
-            </Typography>
-          </li>
-          <li>
-            <Typography
-              variant="body1"
-              textAlign={"left"}
-              onClick={handleClickProjects}
-              style={{ color: clickedProjects ? "blue" : "inherit" }}
-            >
-              <Link to="/MyResume">View my Resume</Link>
             </Typography>
           </li>
           <li>

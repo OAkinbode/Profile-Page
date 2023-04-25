@@ -21,19 +21,40 @@ public class ScoreBoard {
     String five;
     @JsonProperty("six")
     String six;
+    @JsonProperty("seven")
+    String seven;
+    @JsonProperty("eight")
+    String eight;
+    @JsonProperty("nine")
+    String nine;
+    @JsonProperty("ten")
+    String ten;
+    @JsonProperty("eleven")
+    String eleven;
+    @JsonProperty("twelve")
+    String twelve;
     @JsonProperty("winner")
     int winner;
+
 
     ArrayList<String> thePlay = new ArrayList<String>();
 
     public ScoreBoard(){}
-    public ScoreBoard(String one, String two, String three, String four, String five, String six, int winner){
+    public ScoreBoard(String one, String two, String three, String four, String five,
+                      String six, String seven, String eight, String nine, String ten,
+                      String eleven, String twelve, int winner){
         this.one = one;
         this.two = two;
         this.three = three;
         this.four = four;
         this.five = five;
         this.six = six;
+        this.seven = seven;
+        this.eight = eight;
+        this.nine = nine;
+        this.ten = ten;
+        this.eleven = eleven;
+        this.twelve = twelve;
         this.winner = winner;
     }
 
@@ -72,6 +93,18 @@ public class ScoreBoard {
                 five = element;
             else if (i == 5)
                 six = element;
+            else if (i == 6)
+                seven = element;
+            else if (i == 7)
+                eight = element;
+            else if (i == 8)
+                nine = element;
+            else if (i == 9)
+                ten = element;
+            else if (i == 10)
+                eleven = element;
+            else if (i == 11)
+                twelve = element;
         }
 
     }

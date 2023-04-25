@@ -40,6 +40,7 @@ public class GameService implements Constants {
     //This method exists only for the human player but also initializes the play of the Computer
     public ScoreBoard playGameXPlayer(String move) throws IOException {
         play(theRef.getxPlayer(), move);
+        theRef.getxPlayer().checkWinner();
         return theRef.getBoard().getScoreBoard();
     }
 
@@ -53,7 +54,11 @@ public class GameService implements Constants {
 
     //The method is used by the computer to return a play
     public ScoreBoard playGameOPlayer() throws IOException {
-        theRef.getoPlayer().play();
+        theRef.getoPlayer().checkWinner();
+        if (!theRef.getBoard().oWins() && !theRef.getBoard().xWins() && !theRef.getBoard().isFull()) {
+            theRef.getoPlayer().play();
+            theRef.getoPlayer().checkWinner();
+        }
         return theRef.getBoard().getScoreBoard();
     }
 

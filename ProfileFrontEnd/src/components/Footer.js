@@ -10,10 +10,12 @@ function Footer() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/patient-feedback">Projects</Link>
+          <Link to="https://github.com/OAkinbode">My Github Account</Link>
         </li>
         <li>
-          <Link to="/glossary">ContactMe</Link>
+          <Link to="https://www.linkedin.com/in/olusolaakinbode/">
+            My LinkedIn Account
+          </Link>
         </li>
       </ul>
     </div>

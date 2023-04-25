@@ -24,7 +24,8 @@ public class Board implements Constants{
             for (int j = 0; j < 3; j++)
                 theBoard[i][j] = SPACE_CHAR;
         }
-        scoreBoard = new ScoreBoard("","","","","","",0);
+        scoreBoard = new ScoreBoard("","","","","","",
+                "","","","","", "", 0);
     }
 
     /**
